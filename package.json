@@ -1,0 +1,29 @@
+{
+  "name": "autoshop",
+  "version": "1.0.0",
+  "description": "Дипломная работа \"Интернет магазин по продаже автомобилей\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhenkaTanka/AutoShop.git"
+  },
+  "author": "Zhenya Savich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhenkaTanka/AutoShop/issues"
+  },
+  "homepage": "https://github.com/ZhenkaTanka/AutoShop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-plumber": "^1.1.0"
+  },
+  "scripts": {
+      "hello": "gulp watch"
+  }
+}
