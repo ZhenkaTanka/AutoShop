@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Главная страница магазина AutoShop</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <svg style="display: none;">
+        <symbol id="slider-nav" viewBox="0 0 307.046 307.046"><path d="M239.087,142.427L101.259,4.597c-6.133-6.129-16.073-6.129-22.203,0L67.955,15.698c-6.129,6.133-6.129,16.076,0,22.201     l115.621,115.626L67.955,269.135c-6.129,6.136-6.129,16.086,0,22.209l11.101,11.101c6.13,6.136,16.07,6.136,22.203,0     l137.828-137.831C245.222,158.487,245.222,148.556,239.087,142.427z" fill="inherit"/>
+        </symbol>
+    </svg>
 </head>
 <body>
     <header class="main-header">
         <div class="main-header__wrapper">
             <div class="main-header__logo">
                 <img src="img/logo.png" alt="AvtoShop" class="logo" height="55">
-                <h1><a>AvtoShop</a></h1>
+                <h1><a href="index.html">AvtoShop</a></h1>
             </div>
             <nav class="main-nav">
                 <ul class="main-nav__list">
@@ -18,19 +23,19 @@
                         <a class="main-nav__link  main-nav__link_active" href="">Главная</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="" class="main-nav__link" href="">Автомобили</a>
+                        <a href="autolist.html" class="main-nav__link">Автомобили</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="" class="main-nav__link" href="">Акции</a>
+                        <a href="sale.html" class="main-nav__link">Акции</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="" class="main-nav__link" href="">Обзоры</a>
+                        <a href="blog.html" class="main-nav__link">Обзоры</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="" class="main-nav__link" href="">О нас</a>
+                        <a href="about-us.html" class="main-nav__link">О нас</a>
                     </li>
                     <li class="main-nav__item">
-                        <a href="" class="main-nav__link" href="">Контакты</a>
+                        <a href="contacts.html" class="main-nav__link">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -77,10 +82,10 @@
                 </div>
             </div>
             <div class="slider__control">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
+                <label for="slide1"><svg class="slider-icon" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="50px"><use xlink:href="#slider-nav" /></svg></label>
+                <label for="slide2"><svg class="slider-icon" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="50px"><use xlink:href="#slider-nav" /></svg></label>
+                <label for="slide3"><svg class="slider-icon" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="50px"><use xlink:href="#slider-nav" /></svg></label>
+                <label for="slide4"><svg class="slider-icon" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="50px"><use xlink:href="#slider-nav" /></svg></label>
             </div>
         </article>
     </header>
