@@ -1,6 +1,8 @@
 .slider {
-    width: 1000px;
+    width: auto;
     margin: 0 auto;
+    position: relative;
+    overflow: hidden;
     
     input[type=radio] {
         display: none;
@@ -8,18 +10,43 @@
 }
 
 .slider__slides {
-    
+   width: 1000px;
+    margin: 0 auto;
 }
 
 .slider__inner {
     width: 4000px;
     display: flex;
+    font-size: 0px;
+    
+    transition: all 1s ease;
 }
 
 .slider__item {
     width: 1000px;
     position: relative;
     overflow: hidden;
+    
+    transform: skewX(-10deg);
+    margin-right: -90px;
+    
+    &:first-child {
+        margin-right: -45px;
+        transform: skewX(0deg);
+        
+        img {
+            transform: translateX(0px)
+        }
+        
+        .slider__info,
+        .slider__btn {
+            transform: skewX(0deg);
+        }
+    }
+    
+    img {
+        transform: skewX(10deg) translateX(-45px);
+    }
 }
 
 .slider__info {
@@ -29,6 +56,10 @@
     align-items: baseline;
     margin-top: 45px;
     margin-left: 100px;
+    
+    transform: skewX(10deg);
+    
+    z-index: 1;
     
     b {
 
@@ -64,14 +95,25 @@
 .slider__btn {
     position: absolute;
     bottom: 23px;
-    right: 25px;
+    right: 150px;
+    
+    transform: skewX(10deg);
+    
+    z-index: 1;
 }
 
 .slider__control {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    top: 50%;
+    margin-top: -50px;
     
     label {
-        display: block;
-        
+        display: none;
+        height: 100px;
     }
 }
 
@@ -82,4 +124,44 @@
     &:hover {
         filter: drop-shadow(3px 0px 3px rgba(0, 0, 0, 0.31));
     }
+}
+
+input[id="slide1"]:checked ~ .slider__slides > .slider__inner {
+    margin-left: 0px;
+}
+input[id="slide2"]:checked ~ .slider__slides > .slider__inner {
+    margin-left: -950px;
+}
+input[id="slide3"]:checked ~ .slider__slides > .slider__inner {
+    margin-left: -1860px;
+}
+input[id="slide4"]:checked ~ .slider__slides > .slider__inner {
+    margin-left: -2730px;
+}
+
+input[id="slide1"]:checked ~ .slider__control > label[for="slide2"] {
+    display: inline-block;   
+    .control-next();
+    margin-left: auto;
+}
+input[id="slide2"]:checked ~ .slider__control > label[for="slide1"] {
+    display: inline-block;  
+    .control-prew();
+}
+input[id="slide2"]:checked ~ .slider__control > label[for="slide3"] {
+    display: inline-block;
+    .control-next();
+}
+input[id="slide3"]:checked ~ .slider__control > label[for="slide2"] {
+    display: inline-block;   
+    .control-prew();
+}
+input[id="slide3"]:checked ~ .slider__control > label[for="slide4"] {
+    display: inline-block;
+    .control-next();
+}
+input[id="slide4"]:checked ~ .slider__control > label[for="slide3"] {
+    display: inline-block;  
+    .control-prew();
+    margin-right: auto;
 }
