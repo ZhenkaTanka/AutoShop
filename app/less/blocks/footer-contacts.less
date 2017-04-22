@@ -1,0 +1,44 @@
+.footer-contacts {
+    width: 300px;
+}
+
+.footer-contacts__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-contacts__icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../../img/icons/icon-call.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    
+    &_email {
+        background-image: url(../../img/icons/icon-email.svg);
+    }
+    
+    &_map {
+        background-image: url(../../img/icons/icon-map.svg);
+    }
+}
+
+.footer-contacts__link {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: 700;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
