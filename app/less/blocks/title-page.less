@@ -1,0 +1,47 @@
+.title-page {
+    width: 1000px;
+    flex-basis: 100%;
+    min-height: 190px;
+    margin: 0 auto;
+    background-image: url(../../img/road.jpg);
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-page__topic {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0.7;
+}
+
+.title-page__crumbs-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.title-page__crumbs-link {
+    color: white;
+    
+    
+    
+    &[href] {
+        padding-right: 20px;
+        position: relative;
+        
+        &:after {
+           content: '/'; 
+            position: absolute;
+            right: 7px;
+            
+           text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.sorting {
+    .container();
+    background-color: #3a3a3a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorting__filter-link {
+    opacity: 0.5;
+    color: white;
+    
+    &_active {
+        opacity: 1;
+    }
+}
+
+.sorting__view {
+    display: flex;
+    
+    a {
+        height: 20px;
+        width: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.3;
+        margin-left: 10px;
+    }
+}
+
+.sorting__view-list {
+    background-image: url(../../img/icons/icon-list.svg);
+    
+    &_active {
+        opacity: 1;
+    }
+}
+
+.sorting__view-grid {
+    background-image: url(../../img/icons/icon-grid.svg);
+    
+    &_active {
+        opacity: 1;
+    }
+}

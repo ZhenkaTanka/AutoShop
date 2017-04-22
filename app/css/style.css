@@ -207,6 +207,133 @@ input[id="slide4"]:checked ~ .slider__control > label[for="slide3"] {
   transform: rotateZ(180deg);
   margin-right: auto;
 }
+.sorting {
+  width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  background-color: #3a3a3a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.sorting__filter-link {
+  opacity: 0.5;
+  color: white;
+}
+.sorting__filter-link_active {
+  opacity: 1;
+}
+.sorting__view {
+  display: -ms-flexbox;
+  display: flex;
+}
+.sorting__view a {
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.3;
+  margin-left: 10px;
+}
+.sorting__view-list {
+  background-image: url(../../img/icons/icon-list.svg);
+}
+.sorting__view-list_active {
+  opacity: 1;
+}
+.sorting__view-grid {
+  background-image: url(../../img/icons/icon-grid.svg);
+}
+.sorting__view-grid_active {
+  opacity: 1;
+}
+.car-list {
+  width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  background-color: white;
+  padding-top: 20px;
+}
+.car-list-item {
+  width: 748px;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #3a3a3a;
+  margin-bottom: 20px;
+}
+.car-list-item:hover {
+  border-color: #ff8c00;
+}
+.car-list-item__img {
+  width: 333px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.car-list-item__img img {
+  width: 100%;
+}
+.car-list-item__info {
+  width: 415px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.car-list-item__title {
+  margin: 0;
+  padding: 0;
+}
+.car-list-item__title a {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  text-decoration: none;
+}
+.car-list-item__title a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+}
+.car-list-item__price {
+  font-size: 24px;
+  color: #ff4800;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.car-list-item__desc {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+}
+.car-list-item__characteristic {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-bottom: 5px;
+}
+.car-list-item__characteristic span {
+  font-size: 15px;
+  font-weight: 700;
+}
 .footer-contacts {
   width: 300px;
 }
@@ -258,6 +385,9 @@ input[id="slide4"]:checked ~ .slider__control > label[for="slide3"] {
 }
 .footer-links__link {
   color: white;
+}
+.footer-links__link_active {
+  color: #ff8c00;
 }
 .footer-links__link:hover {
   color: #ff8c00;
@@ -331,6 +461,8 @@ input[id="slide4"]:checked ~ .slider__control > label[for="slide3"] {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: white;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .main-header__logo {
   display: -ms-flexbox;
@@ -488,4 +620,49 @@ input[id="slide4"]:checked ~ .slider__control > label[for="slide3"] {
   text-align: center;
   margin: 0;
   margin-top: 10px;
+}
+.title-page {
+  width: 1000px;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  min-height: 190px;
+  margin: 0 auto;
+  background-image: url(../../img/road.jpg);
+  background-position: center;
+  color: white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.title-page__topic {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.title-page__crumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+.title-page__crumbs-link {
+  color: white;
+}
+.title-page__crumbs-link[href] {
+  padding-right: 20px;
+  position: relative;
+}
+.title-page__crumbs-link[href]:after {
+  content: '/';
+  position: absolute;
+  right: 7px;
+  text-decoration: none;
 }

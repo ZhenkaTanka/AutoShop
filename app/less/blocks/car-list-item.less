@@ -1,0 +1,75 @@
+.car-list-item {
+    width: 748px;
+    display: flex;
+    border: 1px solid #3a3a3a;
+    margin-bottom: 20px;
+    
+    &:hover {
+        border-color: #ff8c00;
+    }
+}
+
+.car-list-item__img {
+    width: 333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    box-sizing: border-box;
+    
+    img {
+        width: 100%;
+    }
+}
+
+.car-list-item__info {
+    width: 415px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.car-list-item__title {
+    margin: 0;
+    padding: 0;
+    
+    a {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3a3a3a;
+        text-decoration: none;
+        
+        &:hover {
+            color: #ff8c00;
+            text-decoration: underline;
+        }
+    }
+}
+
+.car-list-item__price {
+    font-size: 24px;
+    color: #ff4800;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.car-list-item__desc {
+    flex-basis: 100%;
+}
+
+.car-list-item__characteristic {
+    flex-basis: 100%;
+    margin-bottom: 5px;
+    
+    span {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
