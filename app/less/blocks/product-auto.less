@@ -1,0 +1,152 @@
+.product-auto {
+    .container();
+    padding-top: 20px;
+    background-color: white;
+}
+
+.product-auto__photos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-auto__photos-left {
+    width: 750px;
+    height: 365px;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.product-auto__photos-right {
+    width: 190px;
+    
+    img {
+        width: 100%;
+        transition: all 0.2s ease;
+        
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.product-auto__price-and-contact {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.product-auto__block-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-auto__price-title {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.product-auto__price {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ff8c00;
+    margin: 0;
+    padding: 0;
+}
+
+.product-auto__contact-us {
+    display: inline-flex;
+    padding-left: 50px;
+    position: relative;
+    
+    &::before {
+        content: "";
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        background-image: url(../../img/icon-consulting.png);
+        left: 10px;
+        top: 50%;
+        margin-top: -14px;
+    }
+}
+
+.product-auto__charact {
+    margin-bottom: 30px;
+}
+
+.product-auto__charact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-auto__charact-item {
+    min-width: 175px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ededed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.product-auto__charact-top {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.product-auto__charact-info {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.product-auto__info {
+    margin-bottom: 30px;
+}
+
+.product-auto__title {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.product-auto__blog {
+    color: #3a3a3a;
+}
+
+.product-auto__bottom-block-contact-us {
+    background-color: #e2e2e2;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-auto__contact-us-desc {
+    margin: 0;
+    margin-top: 10px;
+}
