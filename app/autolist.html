@@ -61,7 +61,8 @@
                 <a class="sorting__view-grid" title="галерея"></a>
             </div>
         </section>
-        <section class="car-list">
+        <div class="pisition-blocks">
+            <section class="car-list">
             <article class="car-list__item  car-list-item">
                 <div class="car-list-item__img">
                     <img src="img/cars/camaro-470.png" alt="Chevrolet Camaro">
@@ -153,7 +154,7 @@
                 </div>
             </article>
         </section>
-        <div class="autolist-block-right">
+           <div class="position-blocks__right">
             <section class="catalog-filters">
                 <form class="catalog-filters__parametrs  inputs" action="" method="get">
                     <fieldset class="catalog-filter__parametr">
@@ -162,25 +163,25 @@
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Chevrolet" checked>
-                                    <a href="" class="input-checkbox-label">Chevrolet</a>
+                                    <span class="input-checkbox-label">Chevrolet</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Audi" checked>
-                                    <a href="" class="input-checkbox-label">Audi</a>
+                                    <span class="input-checkbox-label">Audi</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Mercedes">
-                                    <a href="" class="input-checkbox-label">Mercedes</a>
+                                    <span class="input-checkbox-label">Mercedes</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Porshe">
-                                    <a href="" class="input-checkbox-label">Porshe</a>
+                                    <span class="input-checkbox-label">Porshe</span>
                                 </label>
                             </li>
                         </ul>
@@ -191,25 +192,25 @@
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Купе" checked>
-                                    <a href="" class="input-checkbox-label">Купе</a>
+                                    <span class="input-checkbox-label">Купе</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Седан">
-                                    <a href="" class="input-checkbox-label">Седан</a>
+                                    <span class="input-checkbox-label">Седан</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Хардтоп" >
-                                    <a href="" class="input-checkbox-label">Хардтоп</a>
+                                    <span class="input-checkbox-label">Хардтоп</span>
                                 </label>
                             </li>
                             <li>
                                 <label>
                                     <input class="inputs__checkbox" type="checkbox" name="Лифтбэк">
-                                    <a href="" class="input-checkbox-label">Лифтбэк</a>
+                                    <span class="input-checkbox-label">Лифтбэк</span>
                                 </label>
                             </li>
                         </ul>
@@ -242,11 +243,12 @@
                     </li>
                 </ul>
             </section>
+            </div>
         </div>
         <div class="pagination">
             <ul class="pagination__list">
                 <li class="pagination__item">
-                    <a class="pagination__link  pagination__link_disabled  pagination__link_no-text">Preview</a>
+                    <a class="pagination__link  pagination__link_disabled"><</a>
                 </li>
                 <li class="pagination__item">
                     <a class="pagination__link  pagination__link_active">1</a>
@@ -258,7 +260,7 @@
                     <a class="pagination__link" href="#">3</a>
                 </li>
                 <li class="pagination__item">
-                    <a class="pagination__link  pagination__link_no-text" href="#">Next</a>
+                    <a class="pagination__link" href="#">></a>
                 </li>            
             </ul>
         </div>

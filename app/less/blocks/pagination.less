@@ -1,0 +1,40 @@
+.pagination {
+    .container();
+    background-color: white;
+    padding-bottom: 25px;
+}
+
+.pagination__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.pagination__item {
+    margin-right: 10px;
+}
+
+.pagination__link {
+    display: inline-flex;
+    color: #3a3a3a;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    &_disabled {
+        opacity: 0.3;
+        cursor: default;
+    }
+    
+    &_active {
+        background-color: #ffd7a6;
+        opacity: 0.5;
+    }
+}
